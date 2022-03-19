@@ -31,7 +31,5 @@ public class Lambdas {
 		
 	}
 	
-	private static int sumar(Function<Integer,Integer> suma, Integer numero) {
-		return suma.apply(numero);
-	}
+	
 }

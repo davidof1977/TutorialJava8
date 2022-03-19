@@ -1,5 +1,6 @@
 package es.agroseguro.functional;
 
-public interface CheckTrait {
+@FunctionalInterface
+interface CheckTrait {
 	boolean test(Animal a);
 }

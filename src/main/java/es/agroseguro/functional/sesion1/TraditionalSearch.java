@@ -1,4 +1,4 @@
-package es.agroseguro.functional;
+package es.agroseguro.functional.sesion1;
 
 import java.util.*;
 

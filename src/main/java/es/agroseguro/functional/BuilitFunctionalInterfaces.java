@@ -11,6 +11,9 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
+import es.agroseguro.functional.beans.Parcela;
+import es.agroseguro.functional.beans.Parcela;
+
 public class BuilitFunctionalInterfaces {
 
 	public static void main(String[] args) {
@@ -52,21 +55,21 @@ public class BuilitFunctionalInterfaces {
 		
 		System.out.println(lista);
 		
-		List<Animal> animals = new ArrayList<Animal>();
-		animals.add(new Animal("fish", false, true));
-		animals.add(new Animal("kangaroo", true, false));
-		animals.add(new Animal("rabbit", true, false));
-		animals.add(new Animal("turtle", false, true));
-		animals.add(new Animal("tiger", false, true));
+		List<Parcela> parcela = new ArrayList<Parcela>();
+		parcela.add(new Parcela(3,2));
+		parcela.add(new Parcela(1,2));
+		parcela.add(new Parcela(2,1));
+		parcela.add(new Parcela(1,3));
+		parcela.add(new Parcela(3,1));
 		
-		Comparator<Animal> compAlfabetico = (n, m) -> n.toString().compareTo(m.toString());
-		Comparator<Animal> compSize = (n, m) -> n.toString().length() - m.toString().length();
+		Comparator<Parcela> compNumero = (n, m) -> n.getNumero() - m.getNumero();
+		Comparator<Parcela> compHoja = (n, m) -> n.getHoja() - m.getHoja();
 		
-		animals.sort(compAlfabetico.thenComparing(compSize));
-		System.out.println(animals);
+		parcela.sort(compNumero.thenComparing(compHoja));
+		System.out.println(parcela);
 		
-		animals.sort(compAlfabetico.thenComparing(compSize).reversed());
-		System.out.println(animals);
+		parcela.sort(compNumero.thenComparing(compHoja).reversed());
+		System.out.println(parcela);
 		
 	}
 

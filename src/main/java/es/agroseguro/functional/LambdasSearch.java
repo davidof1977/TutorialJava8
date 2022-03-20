@@ -2,6 +2,9 @@ package es.agroseguro.functional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
+
+import es.agroseguro.functional.beans.Animal;
 
 public class LambdasSearch {
 	public static void main(String[] args) {
@@ -14,12 +17,12 @@ public class LambdasSearch {
 				animals.add(new Animal("turtle", false, true));
 
 		// pass class that does check
-				print(animals, a -> a.canHop());
+				print(animals, a -> a.puedeSaltar());
 				
-				print(animals, a -> a.canSwim());
+				print(animals, a -> a.puedeNadar());
 			}
 
-			private static void print(List<Animal> animals, CheckTrait checker) {
+			private static void print(List<Animal> animals, Predicate<Animal> checker) {
 				for (Animal animal : animals) {
 
 		// the general check

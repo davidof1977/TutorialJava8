@@ -1,7 +1,9 @@
 package es.agroseguro.functional;
 
-public class CheckIfHopper implements CheckTrait {
+import es.agroseguro.functional.beans.Animal;
+
+public class CheckIfHopper implements comprobarHabilidad {
 	public boolean test(Animal a) {
-		return a.canHop();
+		return a.puedeSaltar();
 	}
 }

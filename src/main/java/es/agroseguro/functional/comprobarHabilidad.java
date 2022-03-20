@@ -1,6 +1,8 @@
 package es.agroseguro.functional;
 
+import es.agroseguro.functional.beans.Animal;
+
 @FunctionalInterface
-interface CheckTrait {
+interface comprobarHabilidad {
 	boolean test(Animal a);
 }

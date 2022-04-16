@@ -1,4 +1,4 @@
-package es.agroseguro.functional.sesion2;
+package es.agroseguro.functional.sesion2.streams;
 
 import java.util.List;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Streams {
+public class TerminalOperations {
 	public static void main(String[] args) {
 		List<Integer> numeros = List.of(1, 4, 2, 5, 9, 3);
 		
@@ -44,7 +44,7 @@ public class Streams {
 		String word = stream.reduce("", String::concat);
 		System.out.println(word); // wolf
 		
-		//Coolect
+		//Collect
 		Map<Boolean,List<Integer>> mapa = numeros.stream().collect(Collectors.partitioningBy(n-> n%2==0));
 		System.out.println("Solo los numeros pares");
 		mapa.entrySet().stream().filter(e->e.getKey()).forEach(e -> e.getValue().forEach(System.out::println));

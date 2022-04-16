@@ -8,18 +8,19 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 import es.agroseguro.functional.beans.Parcela;
+import es.agroseguro.functional.utils.GeneradorBeans;
 
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
-		List<Parcela> parcela = new ArrayList<Parcela>();
-		parcela.add(new Parcela(3,2,"A"));
-		parcela.add(new Parcela(1,2,"b"));
-		parcela.add(new Parcela(2,1,"AA"));
-		parcela.add(new Parcela(1,3,"1D"));
-		parcela.add(new Parcela(3,2,"a"));
-		parcela.add(new Parcela(3,4,""));
+		List<Parcela> parcelas = GeneradorBeans.generarParcelas(3,5);
 		
+		parcelas.stream().flatMap(p -> p.getTiposCapital().stream()).forEach(System.out::println);
+		//Obtener la lista de parcelas que 
+		
+		//Obtener el valor de produccion de todas las parcelas
+		int suma = parcelas.stream().flatMap(p -> p.getTiposCapital().stream()).map(tc-> tc.getProduccion()).reduce(0,(p1,p2)-> p1 + p2);
+		System.out.println("Valor produccion= " + suma);
 	}
 
 }

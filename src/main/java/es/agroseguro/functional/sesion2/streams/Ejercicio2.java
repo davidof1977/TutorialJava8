@@ -8,7 +8,7 @@ import es.agroseguro.functional.beans.Parcela;
 import es.agroseguro.functional.beans.TipoCapital;
 import es.agroseguro.functional.utils.GeneradorBeans;
 
-public class CopiaEjercicio2 {
+public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		List<Parcela> parcelas = GeneradorBeans.generarParcelas(3,5);

@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 
 import es.agroseguro.functional.beans.Parcela;
 
-public class CopiaEjercicio1 {
+public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		List<Parcela> parcela = new ArrayList<Parcela>();

@@ -41,7 +41,8 @@ public class BuilitFunctionalInterfaces {
 		System.out.println(numero);	
 		
 		//UnaryOpertor
-		UnaryOperator<Integer> operador = n -> n++;
+		UnaryOperator<Integer> unary_multiplicarX2 = a -> a * 2;
+
 		
 		//BinaryOperator
 		BinaryOperator<Integer> biOperator = (n,m) -> n + m;
@@ -62,13 +63,14 @@ public class BuilitFunctionalInterfaces {
 		parcela.add(new Parcela(1,3));
 		parcela.add(new Parcela(3,1));
 		
-		Comparator<Parcela> compNumero = (n, m) -> n.getNumero() - m.getNumero();
 		Comparator<Parcela> compHoja = (n, m) -> n.getHoja() - m.getHoja();
+		Comparator<Parcela> compNumero = (n, m) -> n.getNumero() - m.getNumero();
+
 		
-		parcela.sort(compNumero.thenComparing(compHoja));
+		parcela.sort(compHoja.thenComparing(compNumero));
 		System.out.println(parcela);
 		
-		parcela.sort(compNumero.thenComparing(compHoja).reversed());
+		parcela.sort(compHoja.thenComparing(compNumero).reversed());
 		System.out.println(parcela);
 		
 	}

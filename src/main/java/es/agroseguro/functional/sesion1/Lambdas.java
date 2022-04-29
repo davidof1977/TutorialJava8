@@ -2,7 +2,9 @@ package es.agroseguro.functional.sesion1;
 
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
 import java.util.function.Consumer;
+import java.util.function.DoubleBinaryOperator;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
@@ -26,9 +28,15 @@ public class Lambdas {
 		System.out.println(size.apply(unaCadena));
 		
 		BiFunction<Double, Double, Double> potencia = (n , m) -> Math.pow(n, m);
+		BinaryOperator<Double> potencia2 = (n , m) -> Math.pow(n, m);
+		DoubleBinaryOperator potencia3 = (n , m) -> Math.pow(n, m);
 		System.out.println(potencia.apply(2.0, 2.0));
 		
 		
+	}
+	
+	public boolean validarLongitu(String mensaje) {
+		return mensaje.length() > 5;
 	}
 	
 	

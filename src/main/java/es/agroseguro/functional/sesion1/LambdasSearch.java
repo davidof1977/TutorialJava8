@@ -2,7 +2,7 @@ package es.agroseguro.functional.sesion1;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 import es.agroseguro.functional.beans.Animal;
 
@@ -19,10 +19,16 @@ public class LambdasSearch {
 		// pass class that does check
 				print(animals, a -> a.puedeSaltar());
 				
-				print(animals, a -> a.puedeNadar());
+				//print(animals, a -> a.puedeNadar());
+				
+				animals.stream().filter(animal -> animal.puedeSaltar()).peek(System.out::println).forEach(a->System.out.print(""));
+				Stream<Animal> s1 = animals.stream();
+				s1.filter(animal -> animal.puedeSaltar()).peek(System.out::println).forEach(a->System.out.print(""));
+				s1.filter(animal -> animal.puedeSaltar()).peek(System.out::println).forEach(a->System.out.print(""));
+				
 			}
 
-			private static void print(List<Animal> animals, Predicate<Animal> checker) {
+			private static void print(List<Animal> animals, comprobarHabilidad checker) {
 				for (Animal animal : animals) {
 
 		// the general check

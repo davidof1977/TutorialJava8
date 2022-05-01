@@ -1,12 +1,12 @@
-package es.agroseguro.functional.utils;
+package es.agroseguro.utils;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-import es.agroseguro.functional.beans.Parcela;
-import es.agroseguro.functional.beans.TipoCapital;
+import es.agroseguro.beans.Parcela;
+import es.agroseguro.beans.TipoCapital;
 
 public class GeneradorBeans {
 	

@@ -1,4 +1,4 @@
-package es.agroseguro.functional.sesion2.streams;
+package es.agroseguro.sesion2.functional.streams;
 
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package es.agroseguro.functional.sesion1;
+package es.agroseguro.sesion1.functional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-import es.agroseguro.functional.beans.Parcela;
+import es.agroseguro.beans.Parcela;
 
 public class EjercicioSesion1 {
 

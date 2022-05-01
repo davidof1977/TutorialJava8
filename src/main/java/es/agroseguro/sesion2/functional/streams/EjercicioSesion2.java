@@ -1,12 +1,12 @@
-package es.agroseguro.functional.sesion2.streams;
+package es.agroseguro.sesion2.functional.streams;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import es.agroseguro.functional.beans.Parcela;
-import es.agroseguro.functional.beans.TipoCapital;
-import es.agroseguro.functional.utils.GeneradorBeans;
+import es.agroseguro.beans.Parcela;
+import es.agroseguro.beans.TipoCapital;
+import es.agroseguro.utils.GeneradorBeans;
 
 public class EjercicioSesion2 {
 

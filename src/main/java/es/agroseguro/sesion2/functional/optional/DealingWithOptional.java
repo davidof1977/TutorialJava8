@@ -1,10 +1,10 @@
-package es.agroseguro.functional.sesion2;
+package es.agroseguro.sesion2.functional.optional;
 
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.Random;
 
-import es.agroseguro.functional.beans.Parcela;
+import es.agroseguro.beans.Parcela;
 
 public class DealingWithOptional {
 	public static void main(String[] args) {

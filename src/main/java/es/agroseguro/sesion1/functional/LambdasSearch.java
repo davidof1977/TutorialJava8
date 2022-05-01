@@ -1,10 +1,10 @@
-package es.agroseguro.functional.sesion1;
+package es.agroseguro.sesion1.functional;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-import es.agroseguro.functional.beans.Animal;
+import es.agroseguro.beans.Animal;
 
 public class LambdasSearch {
 	public static void main(String[] args) {

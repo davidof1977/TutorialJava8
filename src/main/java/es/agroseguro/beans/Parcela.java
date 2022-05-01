@@ -1,4 +1,4 @@
-package es.agroseguro.functional.beans;
+package es.agroseguro.beans;
 
 import java.util.List;
 

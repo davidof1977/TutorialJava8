@@ -1,4 +1,4 @@
-package es.agroseguro.functional.sesion1;
+package es.agroseguro.sesion1.functional;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,8 +11,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
-import es.agroseguro.functional.beans.Parcela;
-import es.agroseguro.functional.beans.Parcela;
+import es.agroseguro.beans.Parcela;
 
 public class BuilitFunctionalInterfaces {
 

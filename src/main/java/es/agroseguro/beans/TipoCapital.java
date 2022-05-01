@@ -1,4 +1,4 @@
-package es.agroseguro.functional.beans;
+package es.agroseguro.beans;
 
 public class TipoCapital {
 	private int id;

@@ -1,8 +1,8 @@
-package es.agroseguro.functional.sesion1;
+package es.agroseguro.sesion1.functional;
 
 import java.util.*;
 
-import es.agroseguro.functional.beans.Animal;
+import es.agroseguro.beans.Animal;
 
 public class TraditionalSearch {
 	public static void main(String[] args) {

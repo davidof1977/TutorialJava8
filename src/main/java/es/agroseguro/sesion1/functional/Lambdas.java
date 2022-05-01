@@ -1,4 +1,4 @@
-package es.agroseguro.functional.sesion1;
+package es.agroseguro.sesion1.functional;
 
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;

@@ -8,6 +8,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 import es.agroseguro.beans.Parcela;
+import es.agroseguro.utils.GeneradorBeans;
 
 public class EjercicioSesion1 {
 
@@ -46,6 +47,14 @@ public class EjercicioSesion1 {
 		System.out.println("Usando streams");
 		parcela.stream().sorted((p1,p2)->p1.getNombre().compareTo(p2.getNombre())).
 			filter(pares).forEach(System.out::println);
+		
+		//Ejercicio Extra
+		//Dada la siguiente lista de parcelas, obtener la suma de la produccion de todos los tipos de capital de aquellas parcelas que tengas mas de un tipo de capital.
+		//Tip: No es necesario hacerlo en un solo paso, aunque como veremos en la siguiente sesion, se puede hacer así.
+		List<Parcela> parcelas = GeneradorBeans.generarParcelas(3,5);
+		
+		
+		
 	}
 
 }

@@ -1,5 +1,5 @@
 package es.agroseguro.sesion3.generics.beans;
 
-public class Elefante {
+public class Elefante extends Animal {
 
 }

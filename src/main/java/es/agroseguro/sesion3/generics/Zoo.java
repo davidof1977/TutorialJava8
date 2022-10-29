@@ -31,7 +31,7 @@ public class Zoo {
 		e = jaula.vaciarContenido();
 	}
 	
-/*	
+/* Esto compila???	
 	public void empaquetar(Jaula<Elefante> j, Object e) {
 		j.empaquetar((Elefante)e);
 	}

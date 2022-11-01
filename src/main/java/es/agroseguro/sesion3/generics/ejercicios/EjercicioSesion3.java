@@ -2,7 +2,7 @@ package es.agroseguro.sesion3.generics.ejercicios;
 
 import java.util.List;
 
-import es.agroseguro.sesion3.generics.ejercicios.model.Boy;
+import es.agroseguro.sesion3.generics.ejercicios.model.Chico;
 import es.agroseguro.sesion3.generics.ejercicios.model.Hombre;
 import es.agroseguro.sesion3.generics.ejercicios.model.Madre;
 import es.agroseguro.sesion3.generics.ejercicios.model.Mujer;
@@ -28,7 +28,7 @@ public class EjercicioSesion3 {
 
 				
 		// Invoca a los métodos que hay al final del ejercicio.
-		List<Persona> personas = List.of(new Hombre(), new Mujer(), new Boy());
+		List<Persona> personas = List.of(new Hombre(), new Mujer(), new Chico());
 		//Metodo1
 		//Metodo2
 		List<Mujer> mujeres = List.of(new Mujer(), new Madre());
